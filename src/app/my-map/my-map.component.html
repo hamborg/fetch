@@ -1,0 +1,52 @@
+<div class="ion-page" main>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button auto-hide=false></ion-menu-button>
+        <!-- ion-menu-button må være Burgermenuen -->
+      </ion-buttons>
+      <ion-title>GoGetter</ion-title>
+      <ion-title size="small">Kort</ion-title>
+      <ion-buttons slot="end">
+          <ion-button color="primary" (click)="centerMe()">Find me</ion-button>
+          <ion-button color="primary" (click)="gotocountry('af')">Afghan</ion-button>
+          <!-- NOTE: Husk at gøre noget ved denne knap, hvis der IKKE findes nogen location! -->
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<!-- Sørg lige for at sætte det her ind i app i stedet for her! -->
+
+
+  <!-- MAP -->
+  <div class="map-container">
+    <div class="map-frame">
+      <div id="map">
+            <!--   -->
+            <!-- [leafletOptions]="options"> -->
+            <!-- (leafletMapReady)="onMapReady($event)" -->
+            <!-- [leafletLayersControl]="layersControl"
+              Skal tilføjes i div'en for at få knap til leaflet-layers på map. (Måske brugbar til kategoriseringer af markers/brugere?) -->
+      </div>
+    </div>
+  </div>
+
+  <ion-buttons slot="end">
+    <ion-button color="primary" (click)="centerMe()" class="float-button"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button color="dark" (click)="roskilde()" class="float-button"><ion-icon name="musical-notes"></ion-icon></ion-button>
+  </ion-buttons>
+</div>
+
+
+<!-- <img src="../../assets/img/leaf-green.png" width="10%"> -->
+
+<!-- 
+<div class="toolbar">
+  <ion-button color="dark" [routerLink]="['']">HOME</ion-button>
+  <ion-button color="dark" (click)="gotocountry(2)">find me!</ion-button>
+</div> -->
+
+
+
+
+<!-- Key til mapbox -->
+<!-- pk.eyJ1IjoiaGFtYm9yZyIsImEiOiJjazNiZ3gzNnQwbHliM2JxaDBncG1vd2lnIn0.ecr4l25wAi5aakKPLQAGqQ -->

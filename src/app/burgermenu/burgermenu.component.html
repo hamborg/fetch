@@ -1,0 +1,28 @@
+<ion-menu side="start" menuId="first" content-id="main" class="side-menu" max-edge-start="100" type="overlay">
+  <ion-header>
+    <ion-toolbar color="primary" (click)="closeMenu()">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+      <ion-title>Menu: {{urlPos}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-list-header>Find StayPutter</ion-list-header>
+      <ion-item *ngFor="let item of MenuItems"  routerLink={{item.urlRoute}} (click)="closeMenu()">
+        <ion-icon name="{{item.icon}}" slot="{{item.iconSlot}}" id={{item.id}} ></ion-icon>
+        <ion-label>{{item.title}}</ion-label>
+        <ion-badge *ngIf="item.badge" slot="end" color="primary">{{item.badge.name}}</ion-badge>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-icon name="settings" slot="start" style="color:cadetblue"></ion-icon>
+      <ion-icon name="person" slot="start" style="color:firebrick"></ion-icon>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-menu>

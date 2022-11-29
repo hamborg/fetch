@@ -1,0 +1,35 @@
+[
+    {
+        "navn":"Gamle Anders",
+        "id":1,
+        "position":{
+            "lat":55.6164958,
+            "lng":12.0802031
+        },
+        "kategori":"red",
+        "besked":"Jeg stod engang her!",
+        "preferencer":["banan", "citron", "druer"]
+    },
+    {
+        "navn":"Gamle Bjarke",
+        "id":2,
+        "position":{
+            "lat":55.6164958,
+            "lng":12.0702031
+        },
+        "kategori":"green",
+        "besked":"Jeg stod engang altså herovre!",
+        "preferencer":["æbler", "vandmelon", "appelsin"]
+    },
+    {
+        "navn":"Gamle Christian",
+        "id":3,
+        "position":{
+            "lat":55.6264958,
+            "lng":12.0702031
+        },
+        "kategori":"orange",
+        "besked":"Jeg stod aldrig her!",
+        "preferencer":["lime", "pomelo", "gin"]
+    }
+]

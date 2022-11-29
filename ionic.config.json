@@ -1,0 +1,7 @@
+{
+  "name": "ros-map",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

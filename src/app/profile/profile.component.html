@@ -1,0 +1,17 @@
+<div class="container">
+  <div *ngFor="let person of DB" class="card">
+    <h2>{{person.navn}}:</h2>
+    <ul>
+      <li>Prioritet: {{person.kategori}}</li>
+      <li>Position: [{{person.position.lat}}; {{person.position.lng}}] </li>
+    </ul>
+    <i>{{person.besked}}</i>
+    <ion-buttons>
+      <ion-button color="secondary">Hent</ion-button>
+      <ion-button color="primary">Skriv til {{person.navn}}</ion-button>
+      <ion-button color="dark"><ion-icon name="cart"></ion-icon></ion-button>
+    </ion-buttons>
+  </div>
+</div>
+
+<p>HOV</p>

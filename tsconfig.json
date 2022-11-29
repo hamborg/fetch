@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "resolveJsonModule": true,  // Skal eftersigende bruges til JSON load
+    "esModuleInterop": true,    // Skal eftersigende bruges til JSON load
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "paths": {
+    "core-js/es7/reflect": ["node_modules/core-js/proposals/reflect-metadata"],
+    "core-js/es6/*": ["node_modules/core-js/es/*"]
+    // Tilføjet pga CSP directive 'favicon' der ikke virkede.
+  }
+}

@@ -1,0 +1,32 @@
+// router-outlet + *  {
+//     padding: 10px 16px;
+// }
+
+.button, button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    // cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+}
+
+// Skidtet virker ikke.
+// Forsøg på at lave top-bar fra "telefon productlist" app
+app-top-bar , ion-header{
+    width: 100%;
+    height: 68px;
+    // background-color: "primary";
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.side-menu{
+  --background: #191919
+}
